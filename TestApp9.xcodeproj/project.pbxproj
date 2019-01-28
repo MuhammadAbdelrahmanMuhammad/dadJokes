@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		522A6FFA21F359A900102801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A6FF921F359A900102801 /* AppDelegate.swift */; };
-		522A6FFC21F359A900102801 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A6FFB21F359A900102801 /* ViewController.swift */; };
+		522A6FFC21F359A900102801 /* JokeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A6FFB21F359A900102801 /* JokeVC.swift */; };
 		522A6FFF21F359A900102801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A6FFD21F359A900102801 /* Main.storyboard */; };
 		522A700121F359AD00102801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522A700021F359AD00102801 /* Assets.xcassets */; };
 		522A700421F359AD00102801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522A700221F359AD00102801 /* LaunchScreen.storyboard */; };
+		522A701521F5265C00102801 /* SearchJokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A701221F5265B00102801 /* SearchJokeModel.swift */; };
+		522A701621F5265C00102801 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A701321F5265B00102801 /* JokeModel.swift */; };
+		522A701A21F5384400102801 /* BaseNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522A701821F5384400102801 /* BaseNetworkManager.swift */; };
+		52315F9321F7D5D10065FB79 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52315F9221F7D5D10065FB79 /* DataModel.swift */; };
+		52CBCC8621F9E9F00049AE82 /* JokePresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBCC8521F9E9F00049AE82 /* JokePresenterDelegate.swift */; };
+		52CBCC8821F9F0650049AE82 /* JokePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBCC8721F9F0650049AE82 /* JokePresenter.swift */; };
+		52CBCC8A21FA8AB20049AE82 /* ReachabilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CBCC8921FA8AB20049AE82 /* ReachabilityTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522A6FF621F359A900102801 /* TestApp9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522A6FF921F359A900102801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		522A6FFB21F359A900102801 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		522A6FFB21F359A900102801 /* JokeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeVC.swift; sourceTree = "<group>"; };
 		522A6FFE21F359A900102801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522A700021F359AD00102801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522A700321F359AD00102801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522A700521F359AD00102801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522A701221F5265B00102801 /* SearchJokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchJokeModel.swift; sourceTree = "<group>"; };
+		522A701321F5265B00102801 /* JokeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		522A701821F5384400102801 /* BaseNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkManager.swift; sourceTree = "<group>"; };
+		52315F9221F7D5D10065FB79 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		52CBCC8521F9E9F00049AE82 /* JokePresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenterDelegate.swift; sourceTree = "<group>"; };
+		52CBCC8721F9F0650049AE82 /* JokePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenter.swift; sourceTree = "<group>"; };
+		52CBCC8921FA8AB20049AE82 /* ReachabilityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,69 @@
 		522A6FF821F359A900102801 /* TestApp9 */ = {
 			isa = PBXGroup;
 			children = (
+				522A701821F5384400102801 /* BaseNetworkManager.swift */,
+				52315F9221F7D5D10065FB79 /* DataModel.swift */,
+				52CBCC8921FA8AB20049AE82 /* ReachabilityTest.swift */,
+				522A700B21F35B0900102801 /* joke */,
 				522A6FF921F359A900102801 /* AppDelegate.swift */,
-				522A6FFB21F359A900102801 /* ViewController.swift */,
 				522A6FFD21F359A900102801 /* Main.storyboard */,
 				522A700021F359AD00102801 /* Assets.xcassets */,
 				522A700221F359AD00102801 /* LaunchScreen.storyboard */,
 				522A700521F359AD00102801 /* Info.plist */,
 			);
 			path = TestApp9;
+			sourceTree = "<group>";
+		};
+		522A700B21F35B0900102801 /* joke */ = {
+			isa = PBXGroup;
+			children = (
+				522A700E21F35BC000102801 /* presentation */,
+				522A700C21F35B9900102801 /* data */,
+			);
+			path = joke;
+			sourceTree = "<group>";
+		};
+		522A700C21F35B9900102801 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				522A701321F5265B00102801 /* JokeModel.swift */,
+				522A701221F5265B00102801 /* SearchJokeModel.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		522A700E21F35BC000102801 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				52CBCC8421F9E9900049AE82 /* protocol */,
+				52CBCC8321F9E97E0049AE82 /* presenter */,
+				522A700F21F35BDF00102801 /* controller */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		522A700F21F35BDF00102801 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				522A6FFB21F359A900102801 /* JokeVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		52CBCC8321F9E97E0049AE82 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				52CBCC8721F9F0650049AE82 /* JokePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		52CBCC8421F9E9900049AE82 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				52CBCC8521F9E9F00049AE82 /* JokePresenterDelegate.swift */,
+			);
+			path = protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522A6FFC21F359A900102801 /* ViewController.swift in Sources */,
+				522A701621F5265C00102801 /* JokeModel.swift in Sources */,
+				522A6FFC21F359A900102801 /* JokeVC.swift in Sources */,
+				522A701521F5265C00102801 /* SearchJokeModel.swift in Sources */,
+				522A701A21F5384400102801 /* BaseNetworkManager.swift in Sources */,
 				522A6FFA21F359A900102801 /* AppDelegate.swift in Sources */,
+				52CBCC8A21FA8AB20049AE82 /* ReachabilityTest.swift in Sources */,
+				52CBCC8621F9E9F00049AE82 /* JokePresenterDelegate.swift in Sources */,
+				52315F9321F7D5D10065FB79 /* DataModel.swift in Sources */,
+				52CBCC8821F9F0650049AE82 /* JokePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z8RAYF297;
 				INFOPLIST_FILE = TestApp9/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Z8RAYF297;
 				INFOPLIST_FILE = TestApp9/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
